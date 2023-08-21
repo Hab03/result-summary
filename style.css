@@ -9,7 +9,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin:0%;
 }
 
 .main {
@@ -155,7 +154,10 @@ h4 {
 }
 /*Using media queries I am setting the max-width from which take the potrait mode in phone*/
 @media (max-width: 480px) {
+  body{margin:0%;
+  }
   .box1 {
+    margin: 0%;
     width: 100%;
     padding: 0px; /* This is important, it will help us to show the border in mobile mode*/
     border-radius: 0px;
@@ -171,6 +173,7 @@ h4 {
   .box2 {
     padding: 5px;
     width: 90%;
+    margin:0%;
   }
   
   .box-text-area {
@@ -182,5 +185,6 @@ h4 {
     flex-direction: column; /* I am using this to make the two boxes align column-wise*/
     overflow: hidden;
     border-radius: 0px;
+    margin: 0%;
   }
 }
